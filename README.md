@@ -9,7 +9,7 @@ package main
 import (
 	"fmt"
 
-	uhub "github.com/universe-30/UHub"
+	uhub "github.com/coreservice-io/UHub"
 )
 
 const testKind uhub.Kind = 1
