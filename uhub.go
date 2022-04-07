@@ -4,7 +4,7 @@ import (
 	"sync"
 )
 
-type Kind int
+type Kind int64
 
 type Event interface {
 	Kind() Kind
