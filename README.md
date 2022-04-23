@@ -1,5 +1,5 @@
 # UHub
-subscriber and publisher
+universal subscriber and publisher
 
 
 ```go
@@ -9,22 +9,22 @@ package main
 import (
 	"fmt"
 
-	uhub "github.com/coreservice-io/UHub"
+	"github.com/coreservice-io/UHub"
 )
 
-const testKind uhub.Kind = 1
+const testKind UHub.Kind = 1
 
 type testEvent string
 
-func (e testEvent) Kind() uhub.Kind {
+func (e testEvent) Kind() UHub.Kind {
 	return testKind
 }
 
 func main() {
 
-	var h uhub.Hub
+	var h UHub.Hub
 
-	h.Subscribe(testKind, func(e uhub.Event) {
+	h.Subscribe(testKind, func(e UHub.Event) {
 		fmt.Println("subcallback")
 		fmt.Println(string(e.(testEvent)))
 	})

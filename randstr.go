@@ -1,4 +1,4 @@
-package uhub
+package UHub
 
 import (
 	"math/rand"
